@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking</title>
+<style>
+  body {
+    background-image: url('images/backgroundimage.jpg');
+    background-size:cover; /* This ensures the image covers the entire background */
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+  }
+  img:hover {
+    opacity: 0.5;
+  }
+  .centered-form {
+    width: 50%;
+    margin: 0 auto;
+	text-align: center;
+  }
+	input[type="text"] {
+		width: 50%;
+		margin-left: 350px;
+	}
+	select[name="uSession"] {
+		width: 50%;
+		margin-left: 350px;
+	}
+	select[name="uBackdrop"] {
+		width: 50%;
+		margin-left: 350px;
+	}
+	input[type="date"] {
+		width: 50%;
+		margin-left: 350px;
+	}
+	select[name="uTime"] {
+		width: 50%;
+		margin-left: 350px;
+	}
+</style>
+</head>
+<body>
+	<br><br>
+	<form method="post" action="saveBooking.php" name="bookingForm">
+<h1 align="center">BOOKING FORM</h1><br><br>
+<form class="centered-form">
+	  <div class="form-group">
+	    <label for="InputName" style="margin-left: 350px;"><h5><b>Name</b></h5></label>
+	    <input type="text" class="form-control" name="uName" size="50" id="InputName" placeholder="Enter Your Name">
+	    <small id="emailHelp1" class="form-text text-muted"></small>
+	  </div>
+	
+	  <div class="form-group">
+	    <label for="InputContact" style="margin-left: 350px;"><h5><b>Contact</b></h5></label>
+	    <input type="text" class="form-control" name="uContact" size="12" id="InputContact" placeholder="e.g 01145508721">
+      </div>
+	
+	  <div class="form-group">
+	    <label for="InputEmail" style="margin-left: 350px;"><h5><b>Email</b></h5></label>
+	    <input type="text" class="form-control"
+			   name="uEmail" size="50" id="InputEmail" placeholder="e.g farahnurlaili12@gmail.com">
+      </div>
+	  
+	  <div class="form-group">
+		  <label for="InputSession" style="margin-left: 350px;"><h5><b>Session</b></h5></label>
+		  <select class="form-control" name="uSession" id="InputSession">
+			  <option value="" disabled selected>---Please Select Your Session---</option>
+		      <option value="15 MINUTES PHOTOSHOOT">15 MINUTES PHOTOSHOOT</option>
+			  <option value="25 MINUTES PHOTOSHOOT">25 MINUTES PHOTOSHOOT</option>
+			  <option value="45 MINUTES PHOTOSHOOT">45 MINUTES PHOTOSHOOT</option>
+		  </select>
+      </div>
+	
+	  <div class="form-group">
+		  <label for="InputBackdrop" style="margin-left: 350px;"><h5><b>Backdrop Color</b></h5></label>
+		  <select class="form-control" name="uBackdrop" id="InputBackdrop">
+			  <option value="" disabled selected>---Please Select Your Backdrop---</option>
+		      <option value="WHITE">WHITE</option>
+			  <option value="BLACK">BLACK</option>
+			  <option value="GREY">GREY</option>
+			  <option value="BABY BLUE">BABY BLUE</option>
+			  <option value="SOFT YELLOW">SOFT YELLOW</option>
+		  </select>
+      </div>
+	
+	  <div class="form-group">
+		  <label for="InputDate" style="margin-left: 350px;"><h5><b>Date</b></h5></label>
+          <input type="date" class="form-control" name="uDate" id="InputDate">
+      </div>
+	
+	  <div class="form-group">
+		  <label for="InputTime" style="margin-left: 350px;"><h5><b>Time</b></h5></label>
+		  <select class="form-control" name="uTime" id="InputTimeHour">
+			  <option value="" disabled selected>---Please Choose Your Preferred Time Slot---</option>
+			  <option value="11.00 AM">11:00 AM</option>
+			  <option value="11.15 AM">11:15 AM</option>
+			  <option value="11.30 AM">11:30 AM</option>
+			  <option value="11.45 AM">11:45 AM</option>
+              <option value="12.00 AM">12:00 AM</option>
+			  <option value="12.15 AM">12:15 AM</option>
+			  <option value="12.30 AM">12:30 AM</option>
+			  <option value="12.45 AM">12:45 AM</option>
+              <option value="13.00 PM">1:00 PM</option>
+			  <option value="13.15 PM">1:15 PM</option>
+			  <option value="13.30 PM">1:30 PM</option>
+			  <option value="13.45 PM">1:45 PM</option>
+              <option value="14.00 PM">2:00 PM</option>
+			  <option value="14.15 PM">2:15 PM</option>
+			  <option value="14.30 PM">2:30 PM</option>
+			  <option value="14.45 PM">2:45 PM</option>
+              <option value="15.00 PM">3:00 PM</option>
+			  <option value="15.15 PM">3:15 PM</option>
+			  <option value="15.30 PM">3:30 PM</option>
+			  <option value="15.45 PM">3:45 PM</option>
+              <option value="16.00 PM">4:00 PM</option>
+			  <option value="16.15 PM">4:15 PM</option>
+			  <option value="16.30 PM">4:30 PM</option>
+			  <option value="16.45 PM">4:45 PM</option>
+              <option value="17.00 PM">5:00 PM</option>
+			  <option value="17.15 PM">5:15 PM</option>
+			  <option value="17.30 PM">5:30 PM</option>
+			  <option value="17.45 PM">5:45 PM</option>
+              <option value="18.00 PM">6:00 PM</option>
+			  <option value="18.15 PM">6:15 PM</option>
+			  <option value="18.30 PM">6:30 PM</option>
+			  <option value="18.45 PM">6:45 PM</option>
+              <option value="19.00 PM">7:00 PM</option>
+          </select>
+      </div>
+	
+	  <div class="form-check">
+	    <input type="checkbox" class="form-check-input" id="CheckInput" style="margin-left: 330px;">
+	    <label class="form-check-label" for="CheckInput" style="margin-left: 350px;">I agree to the Booking Agreement Terms and Conditions.</label>
+      </div><br>
+	
+	  <button type="submit" class="btn btn-primary" style="margin-left: 350px;margin-bottom: 50px;">Submit</button>
+	  <a href="reservation page.html" class="btn btn-primary" style="margin-bottom: 50px;" >Back</a>
+</form>
+	</form>
+</body>
+</html>

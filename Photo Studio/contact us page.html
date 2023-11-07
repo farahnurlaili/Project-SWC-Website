@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Self Studio Contact Page</title>
+</head>
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	/*style the header*/
+	header {
+        max-width: 1%;
+    }
+	
+	/* Create a container for navigation and article */
+    .container {
+        display: flex; /* Use flexbox to align items horizontally */
+    }
+
+    .vertical-menu {
+        width: 34%; /* Adjust the width as needed */
+        background-color:#2F2F2F;
+        padding-top: 30px;
+		padding-left: 25px;
+		padding-right: 25px;
+        color: whitesmoke;
+        font-size: 16px;
+        text-decoration: none;
+		padding-bottom: 40px;
+    }
+
+    .vertical-menu a {
+        display: block;
+        padding: 10px 20px; /* Adjust padding as needed */
+        color: whitesmoke;
+        text-decoration: none;
+        transition: background-color 0.3s;
+		margin-bottom: 10px;
+    }
+
+    .vertical-menu a:hover {
+        background-color:#C8C8C8;
+		color: #3B3B3B;
+    }
+
+    .vertical-menu a.active {
+        background-color:#656565;
+    }
+
+	article {
+		float: left;
+		padding: 5.6%;
+		width: 70%;
+		background-color: dimgrey;
+		color: whitesmoke;
+		font-size: 24px
+	}
+	table {
+		width: 104%;
+		border-collapse: collapse;
+	}
+	tr,td {
+		border: 2px solid;
+		padding: 5px;
+	}
+	
+	/*style the footer*/
+	footer {
+		background-color: darkgray;
+		padding: 60px;
+		align-items: stretch;
+		color:white;
+		text-align: center;
+		font-size: 20px;
+	}
+	.contact {
+		text-align: center;
+        display: flex;
+        flex-direction: column; /* To stack the items vertically */
+    }
+
+    .contact li {
+		color: #2F2F2F;
+        text-align: left;
+        margin-left: 570px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .centered {
+		text-align: center;
+		margin-right: 50px;
+    }
+	
+	.center-button2 {
+		text-align: center;
+		margin-top: -10px;
+		width: 120px;
+		color: #2F2F2F;
+		text-decoration: none;
+		display:inline-block;
+		font-size:20px;
+		margin-right: 50px;
+	}
+	.custom-button2 {
+		background-color: #2F2F2F;
+		color: white;
+		border: none;
+		width: 170px;
+		padding: 10px 20px;
+		font-size:18px;
+		text-align: center;
+		cursor:pointer;
+		margin-right: 60px;
+		margin-bottom: 20px;
+    } 
+	.center-button3 {
+		text-align: center;
+		margin-top: -10px;
+		width: 120px;
+		color: #2F2F2F;
+		text-decoration: none;
+		display:inline-block;
+		font-size:20px;
+		margin-right: 50px;
+	}
+	.custom-button3 {
+		background-color: #2F2F2F;
+		color: white;
+		border: none;
+		width: 170px;
+		padding: 10px 20px;
+		font-size:18px;
+		text-align: center;
+		cursor:pointer;
+		margin-right: 60px;
+		margin-bottom: 20px;
+    }
+	.center-button4 {
+		text-align: center;
+		margin-top: -10px;
+		width: 120px;
+		color: #2F2F2F;
+		text-decoration: none;
+		display:inline-block;
+		font-size:20px;
+		margin-right: 50px;
+	}
+	.custom-button4 {
+		background-color: #2F2F2F;
+		color: white;
+		border: none;
+		width: 170px;
+		padding: 10px 20px;
+		font-size:18px;
+		text-align: center;
+		cursor:pointer;
+    } 
+
+	/*Styles for the image*/
+    img {
+		display: inline-block;
+		margin-left: 6%;
+		opacity: 2.0;
+        }
+	/*Styles for the image when hovered*/
+    img:hover {
+		opacity:0.7;
+	}
+	.copyright {
+		margin: 25px;
+        color:#343434;
+		font-size: 16px;
+	}
+</style>
+<body>
+	<header>
+		<img src="images/web banner.png" width="1510" alt="banner"/>
+	</header>
+	
+    <section class="container">
+        <div class="vertical-menu">
+            <a href="homepage.html">Home</a>
+            <a href="guide page.html">Guide</a>
+            <a href="pricing list page.html">Pricing</a>
+            <a href="reservation page.html">Reservation</a>
+            <a href="t&c page.html">T&C</a>
+            <a href="contact us page.html" class="active">Contact us</a>
+			<a href="login page.html">Login</a>
+        </div>
+
+		
+    <article>
+			<p style="font-size: 50px;align:center;margin-top: 80px"><b>C O N T A C T  </b></p>
+	</article>
+
+   </section>
+    
+	<footer><br>
+		<div class="contact">
+			<ul>
+				<li>Phone Number</li>
+                <p class="centered">+60199195532 (farah)</p>
+                <p class="centered">+601128956410 (fatin)</p><br>
+
+                <li>Email</li>
+                <p class="centered">admin@selfphotostudio.com</p><br>
+
+                <li>Other Socials</li><br>
+           </ul>
+        </div>
+		
+		<div class="center-button2">
+		<a href="https://www.instagram.com/suafotostudio/">
+        <input type="button" value="Instagram" class="custom-button2">
+        </a>
+        </div><br>
+		
+		<div class="center-button3">
+		<a href="https://api.whatsapp.com/send/?phone=60102727101&text&type=phone_number&app_absent=0">
+        <input type="button" value="WhatsApp" class="custom-button3">
+        </a>
+        </div><br>
+		
+		<div class="center-button4">
+		<a href="https://www.tiktok.com/@suafotostudio">
+        <input type="button" value="Tiktok" class="custom-button4">
+        </a>
+        </div><br><br>
+
+		<div class="copyright"> <p>&copy; 2023 Self Studio Photo. All rights reserved.</p></div>
+</footer>
+
+</body>
+</html>
