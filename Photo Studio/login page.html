@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Self Studio Login Page</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        max-width: 1%;
+    }
+
+    /* Style the header */
+
+    /* Create a container for navigation and article */
+    .container {
+        display: flex; /* Use flexbox to align items horizontally */
+    }
+
+    .vertical-menu {
+        width: 34%; /* Adjust the width as needed */
+        background-color:#2F2F2F;
+        padding-top: 70px;
+		padding-left: 25px;
+		padding-right: 25px;
+        color: whitesmoke;
+        font-size: 16px;
+        text-decoration: none;
+		padding-bottom: 40px;
+    }
+
+    .vertical-menu a {
+        display: block;
+        padding: 10px 20px; /* Adjust padding as needed */
+        color: whitesmoke;
+        text-decoration: none;
+        transition: background-color 0.3s;
+		margin-bottom: 10px;
+    }
+
+    .vertical-menu a:hover {
+        background-color:#C8C8C8;
+		color: #3B3B3B;
+    }
+
+    .vertical-menu a.active {
+        background-color:#656565;
+    }
+
+    .article {
+        width: 80%; /* Adjust the width as needed */
+        padding: 5%;
+        background-color: dimgrey;
+        color: whitesmoke;
+        font-size: 25px;
+    }
+	.inline-button {
+		display: inline-block;
+	}
+	.user-login-button {
+		text-align: center;
+		margin-top: -10px;
+		width: 120px;
+		color: #2F2F2F;
+		text-decoration: none;
+		display:inline-block;
+		font-size:20px;
+	}
+	.user-custom-button {
+		background-color: #2F2F2F;
+		color: white;
+		border: none;
+		width: 170px;
+		padding: 10px 20px;
+		font-size:18px;
+		text-align: center;
+		cursor:pointer;
+		margin-right: 60px;
+		margin-bottom: 20px;
+    } 
+	.admin-login-button {
+		text-align: center;
+		margin-top: -10px;
+		width: 120px;
+		color: #2F2F2F;
+		text-decoration: none;
+		display:inline-block;
+		font-size:20px;
+	}
+	.admin-custom-button {
+		background-color: #2F2F2F;
+		color: white;
+		border: none;
+		width: 170px;
+		padding: 10px 20px;
+		font-size:18px;
+		text-align: center;
+		cursor:pointer;
+		margin-right: 60px;
+		margin-bottom: 20px;
+    }
+
+    /* Style the footer */
+    footer {
+        background-color: darkgray;
+        padding: 10px;        
+		align-items: stretch;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* Styles for the image */
+    img {
+        display: inline-block;
+        margin-left: 6%;
+        opacity: 2.0;
+    }
+
+    /* Styles for the image when hovered */
+    img:hover {
+        opacity: 0.7;
+    }
+	.copyright {
+		margin: 25px;
+        color:#343434;
+		font-size: 16px;
+	}
+</style>
+</head>
+<body>
+    <header>
+		<img src="images/web banner.png" width="1510" alt="banner"/>
+    </header>
+
+    <section class="container">
+        <div class="vertical-menu">
+            <a href="homepage.html">Home</a>
+            <a href="guide page.html">Guide</a>
+            <a href="pricing list page.html">Pricing</a>
+            <a href="reservation page.html">Reservation</a>
+            <a href="t&c page.html">T&C</a>
+            <a href="contact us page.html">Contact us</a>
+			<a href="login page.html" class="active">Login</a>
+        </div>
+
+        <div class="article">
+            <h1>LOGIN PAGE</h1>
+			<div class="inline-button">
+			<div class="user-login-button">
+				<a href="user login page.html">
+                <input type="button" value="USER LOGIN" class="user-custom-button">
+                </a>
+            </div><br>
+		
+		    <div class="admin-login-button">
+				<a href="admin login page.html">
+                <input type="button" value="ADMIN LOGIN" class="admin-custom-button">
+                </a>
+            </div><br>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright"> <p>&copy; 2023 Self Studio Photo. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
